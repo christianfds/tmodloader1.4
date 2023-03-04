@@ -24,6 +24,7 @@ ENV TMOD_PASS="docker"
 ENV TMOD_MAXPLAYERS="8"
 ENV TMOD_WORLDNAME="Docker"
 ENV TMOD_WORLDSIZE="3"
+ENV TMOD_WORLDDIFFICULTY="0"
 ENV TMOD_WORLDSEED="Docker"
 
 # Loading a configuration file expects a proper Terraria config file to be mapped to /root/terraria-server/serverconfig.txt

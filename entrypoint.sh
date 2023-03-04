@@ -17,6 +17,7 @@ else
   echo -e "World Name set to: $TMOD_WORLDNAME"
   echo -e "World Size set to: $TMOD_WORLDSIZE"
   echo -e "World Seed set to: $TMOD_WORLDSEED"
+  echo -e "World Seed set to: $TMOD_WORLDDIFFICULTY"
   echo -e "Max Players set to: $TMOD_MAXPLAYERS"
   echo -e "Server Password set to: $TMOD_PASS"
   echo -e "MOTD Set to: $TMOD_MOTD"
@@ -100,7 +101,7 @@ else
     echo -e "[!!] WARNING: The world \"$TMOD_WORLDNAME\" was not found. The server will automatically create a new world."
     sleep 3s
     server="$server -world \"/root/.local/share/Terraria/tModLoader/Worlds/$TMOD_WORLDNAME.wld\""
-    server="$server -autocreate $TMOD_WORLDSIZE -worldname \"$TMOD_WORLDNAME\" -seed \"$TMOD_WORLDSEED\""
+    server="$server -autocreate $TMOD_WORLDSIZE -worldname \"$TMOD_WORLDNAME\" -seed \"$TMOD_WORLDSEED\" -difficulty \"TMOD_WORLDDIFFICULTY\""
   fi
 
   server="$server -players $TMOD_MAXPLAYERS"
